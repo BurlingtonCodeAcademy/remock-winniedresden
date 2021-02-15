@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+/*I made the website as one enormous grid and another smaller one at the bottom (the footer) putting each section of the site in a grid block*/
 
 #most{
     background-color: aliceblue;
@@ -14,7 +15,7 @@
         "quote quote quote quote"
         "margin3 body sidebar margin4";
 }
-#title{
+#title{  
     font-size: 55px;
     text-shadow: 2px 2px green;
     color: lavender;
@@ -25,13 +26,13 @@
     justify-self: end;
     text-align: center;
 }
-hr{
+hr{ /*I applied the same attributes to all my horizontal lines*/
     align-items: center;
     width: 90%;
     height: .7px;
     background: lightgray;
 }
-#margin1{
+#margin1{  /*I used these margin sections as placeholders so I could fill them with a background color*/
     grid-area: margin1;
     height: 400px;
     color:aliceblue;
@@ -56,6 +57,7 @@ hr{
     grid-area: header;
     height: 500px;
 }
+/*I  made the photo area of the grid into a flexbox so the photos could line up next to each other */ 
 #photos{
     grid-area: pics;
     display: flex;
@@ -72,6 +74,7 @@ hr{
 #figure3{
     width: 100%;
 }
+/*I gave all the buttons the same attributes so I could have given them all the same class */
 #learn{
     height: 30px;
     color: white;
@@ -126,6 +129,7 @@ hr{
 #date:hover{
     background-color: purple;
 }
+/*Footer info, links, grids, etc. */
 #footer{
     color: black;
     width: 100%;
