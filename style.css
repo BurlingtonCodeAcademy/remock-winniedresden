@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+#most{
+    background-color: aliceblue;
+    font-family: 'Lexend Giga', sans-serif;
+    color:gray;
+    height: 2100px;
+    display: grid;
+    grid-template-columns: .2fr 1fr .5fr .2fr;
+    grid-template-rows: .6fr .2fr 1fr;
+    grid-template-areas: 
+        "margin1 header header margin2"
+        "quote quote quote quote"
+        "margin3 body sidebar margin4";
+}
+#title{
+    font-size: 55px;
+    text-shadow: 2px 2px green;
+    color: lavender;
+    text-align: center;
+}
+#take{
+    align-self: end;
+    justify-self: end;
+    text-align: center;
+}
+hr{
+    align-items: center;
+    width: 90%;
+    height: .7px;
+    background: lightgray;
+}
+#margin1{
+    grid-area: margin1;
+    height: 400px;
+    color:aliceblue;
+}
+#margin2{
+    grid-area: margin2;
+    height: 400px;
+    color: aliceblue;
+}
+
+#margin3{
+    grid-area: margin3;
+    height: 1350px;
+    color: aliceblue;
+}
+
+#margin4{
+    grid-area: margin4;
+    color: aliceblue;
+}
+#header{
+    grid-area: header;
+    height: 500px;
+}
+#photos{
+    grid-area: pics;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+#figure1{
+    width: 100%;
+}
+#figure2{
+    width: 100%;
+}
+#figure3{
+    width: 100%;
+}
+#learn{
+    height: 30px;
+    color: white;
+    background-color:blue;
+    border-radius: 5%;
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend Giga', sans-serif;
+}
+#learn:hover{
+    background-color: purple;
+}
+#quote{
+    grid-area: quote;
+    width: 50%;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#body{
+    grid-area: body;
+}
+#reading{
+    height: 30px;
+    color: white;
+    background-color:blue;
+    border-radius: 5%;
+    grid-area: continue;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+#reading:hover{
+    background-color: purple;
+}
+#date{
+    height: 30px;
+    color: white;
+    background-color:blue;
+    border-radius: 5%;
+    text-align: center; 
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+#date:hover{
+    background-color: purple;
+}
+#footer{
+    color: black;
+    width: 100%;
+    font-family: 'Lexend Giga', sans-serif;
+    display: grid;
+    grid-template-columns: .20fr 1fr 1fr .20fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+        "footer1 questions  questions footer2"
+        "footer1 form info footer2";
+    height:300px;
+    background-color: lightgray;
+}
+.side{
+    float: left;
+    width:100px;
+}
+#more{
+    height: 30px;
+    color: white;
+    background-color:blue;
+    border-radius: 5%;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+#more:hover{
+    background-color: purple;
+}
+#questions{
+    grid-area: questions;
+    text-align:center;
+    font-size: 22px;
+}
+#form{
+    grid-area: form;
+}
+#info{
+    color: black;
+    height: 250px;
+    grid-area: info;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "writing writing"
+        "data1 data2";
+}
+.writing{ 
+    text-align: left;
+    grid-area: writing;
+    font-size: 14px;
+}
+.data1{
+    grid-area: data1;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.data2{
+    grid-area: data2;
+    font-size: 14px;
+}
+#input1{
+    width: 39%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#input2{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea{
+    width: 80%;
+    height: 130px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+#input1:focus{
+    background-color: lightpink;
+    border: 5px solid magenta;
+}
+#input2:focus{
+    background-color: lightpink;
+    border: 5px solid magenta;
+}
+textarea:focus{
+    background-color: lightpink;
+    border: 5px solid magenta;
+}
+.icon{
+    height: 20px;
+    padding-right: 20px;
+}
+#footer1{
+    background-color: lightgray;
+    grid-area: footer1;
+    color: lightgray;
+}
+#footer2{
+    background-color: lightgray;
+    grid-area:footer2;
+    color: lightgray;
+}
+.link{
+    color: black;
+
+}
+.link:hover{
+    color: magenta;
+}
