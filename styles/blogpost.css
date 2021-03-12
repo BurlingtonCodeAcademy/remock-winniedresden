@@ -9,24 +9,20 @@ body{
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: 
-        "margin1 header margin2"
-        "margin1 post margin2"
+        ". header ."
+        ". post ."
         "footer1 footer footer2"; 
 }
 
 #subtitle{
     text-align: center;
 }
-#margin1{
+.{
     grid-area: margin1;
     height: 700px;
     color: aliceblue;
 }
-#margin2{
-    grid-area: margin2;
-    height: 700px;
-    color: aliceblue;
-}
+
 
 #header{
     grid-area: header;
@@ -53,6 +49,10 @@ hr{
 #features{
     grid-area: post;
     text-align:center;
+}
+/* footer css */
+span{
+    color:black;
 }
 #footer1{
     background-color: lightgray;
@@ -161,4 +161,8 @@ textarea:focus{
 }
 .link:hover{
     color: magenta;
+}
+body{ 
+    margin: 0; 
+    padding: 0
 }

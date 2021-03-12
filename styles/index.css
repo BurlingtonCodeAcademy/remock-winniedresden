@@ -11,9 +11,9 @@
     grid-template-columns: .2fr 1fr .5fr .2fr;
     grid-template-rows: .6fr .2fr 1fr;
     grid-template-areas: 
-        "margin1 header header margin2"
+        ". header header ."
         "quote quote quote quote"
-        "margin3 body sidebar margin4";
+        ". body sidebar .";
 }
 #title{  
     font-size: 55px;
@@ -32,32 +32,19 @@ hr{ /*I applied the same attributes to all my horizontal lines*/
     height: .7px;
     background: lightgray;
 }
-#margin1{  /*I used these margin sections as placeholders so I could fill them with a background color*/
-    grid-area: margin1;
+.{  /*I used these margin sections as placeholders so I could fill them with a background color*/
+    grid-area: .;
     height: 400px;
     color:aliceblue;
-}
-#margin2{
-    grid-area: margin2;
-    height: 400px;
-    color: aliceblue;
-}
-
-#margin3{
-    grid-area: margin3;
-    height: 1350px;
-    color: aliceblue;
-}
-
-#margin4{
-    grid-area: margin4;
-    color: aliceblue;
 }
 #header{
     grid-area: header;
     height: 500px;
 }
 /*I  made the photo area of the grid into a flexbox so the photos could line up next to each other */ 
+#background{
+    width: 100vw;
+}
 #photos{
     grid-area: pics;
     display: flex;
@@ -93,7 +80,8 @@ hr{ /*I applied the same attributes to all my horizontal lines*/
 }
 #quote{
     grid-area: quote;
-    width: 50%;
+    width: 500px;
+
 }
 #sidebar{
     grid-area: sidebar;
@@ -138,8 +126,8 @@ hr{ /*I applied the same attributes to all my horizontal lines*/
     grid-template-columns: .20fr 1fr 1fr .20fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas:
-        "footer1 questions  questions footer2"
-        "footer1 form info footer2";
+        ". questions  questions ."
+        ". form info .";
     height:300px;
     background-color: lightgray;
 }
@@ -161,6 +149,7 @@ hr{ /*I applied the same attributes to all my horizontal lines*/
 #more:hover{
     background-color: purple;
 }
+/* footer css */
 #questions{
     grid-area: questions;
     text-align:center;
@@ -168,6 +157,9 @@ hr{ /*I applied the same attributes to all my horizontal lines*/
 }
 #form{
     grid-area: form;
+}
+span{
+    color:black;
 }
 #info{
     color: black;
@@ -228,14 +220,9 @@ textarea:focus{
     height: 20px;
     padding-right: 20px;
 }
-#footer1{
+.{
     background-color: lightgray;
     grid-area: footer1;
-    color: lightgray;
-}
-#footer2{
-    background-color: lightgray;
-    grid-area:footer2;
     color: lightgray;
 }
 .link{
@@ -244,4 +231,8 @@ textarea:focus{
 }
 .link:hover{
     color: magenta;
+}
+body{ 
+    margin: 0; 
+    padding: 0
 }

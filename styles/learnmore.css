@@ -8,17 +8,12 @@
     grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: .5fr 5fr 1fr;
     grid-template-areas: 
-        "margin1 header margin2"
-        "margin1 post margin2"
+        ". header ."
+        ". post ."
         "footer1 footer footer2";
 }
-#margin1{
-    grid-area: margin1;
-    height: 700px;
-    color: aliceblue;
-}
-#margin2{
-    grid-area: margin2;
+.{
+    grid-area: .;
     height: 700px;
     color: aliceblue;
 }
@@ -60,6 +55,7 @@ hr{
 }
 #sidebar{
     grid-area: sidebar;
+    padding-right: 5px;
 }
 #date{
     height: 30px;
@@ -76,10 +72,15 @@ hr{
 .side{
     float: left;
     width:100px;
+    padding-right: 5px;
 }
-#aliens{
+.sky{
+    padding-left: 50px;
+}
+#main{
     grid-area: main;
     text-align: justify;
+    padding-left: 5px;
 }
 #continue{
     grid-area: main;
@@ -96,6 +97,10 @@ hr{
 }
 #reading:hover{
     background-color: purple;
+}
+/* footer css */
+span{
+    color:black;
 }
 #footer1{
     background-color: lightgray;
@@ -204,4 +209,8 @@ textarea:focus{
 }
 .link:hover{
     color: magenta;
+}
+body{ 
+    margin: 0; 
+    padding: 0
 }

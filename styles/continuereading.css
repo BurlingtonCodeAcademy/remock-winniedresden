@@ -13,6 +13,7 @@
         "margin1 post margin2"
         "footer1 footer footer2";
 }
+/* I would take out the empty grid items and replace with "." but the footer margins are a different color than the regular margins, so for now i have empty blocks of text / color for my margins */
 #header{
     grid-area: header;
     text-align: center;
@@ -59,10 +60,11 @@ hr{
 }
 #main{
     grid-area: main;
+    padding-right: 10px;
 }
 #sidebar{
     grid-area: sidebar;
-    padding-left:
+    padding-left: 5px;
 }
 #date{
     height: 30px;
@@ -80,8 +82,11 @@ hr{
     float: left;
     width:100px;
 }
-#aliens{
+#main{
     grid-area: main;
+}
+.sky{
+    padding-left: 50px;
 }
 #continue{
     grid-area: main;
@@ -133,6 +138,11 @@ hr{
 }
 #more:hover{
     background-color: purple;
+}
+
+/* footer css */
+span{
+    color:black;
 }
 #questions{
     grid-area: questions;
@@ -206,4 +216,8 @@ textarea:focus{
 }
 .link:hover{
     color: magenta;
+}
+body{ 
+    margin: 0; 
+    padding: 0
 }
